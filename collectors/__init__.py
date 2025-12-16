@@ -1,5 +1,5 @@
 """
-Collectors Package - 거래소별 데이터 수집기
+Collectors Package
 """
 from .base import BaseCollector, TickerData
 from .binance import BinanceCollector
@@ -26,7 +26,4 @@ COLLECTOR_MAP = {
 
 __all__ = [
     "BaseCollector", "TickerData", "COLLECTOR_MAP",
-    "BinanceCollector", "BybitCollector", "OKXCollector",
-    "GateCollector", "BitgetCollector", "MEXCCollector",
-    "HyperliquidCollector", "LighterCollector", "VariationalCollector",
 ]
